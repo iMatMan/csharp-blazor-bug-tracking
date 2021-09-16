@@ -4,7 +4,7 @@
 <EditForm Model="AddBug">
     <InputText @bind-value="@AddBug.Title" placeholder="Enter Title"></InputText>
     <InputText @bind-value="@AddBug.Description" placeholder="Enter Description"></InputText>
-    <InputNumber @bind-value="@AddBug.Priority"></InputNumber>
+    <Component TValue="@AddBug.Priority" placeholder="Enter Priority"></Component>
     <button type="submit">Add Bug</button>
 </EditForm>
 
